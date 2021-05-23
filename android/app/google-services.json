@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "573522922780",
+    "project_id": "wallpaper-h-f666e",
+    "storage_bucket": "wallpaper-h-f666e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573522922780:android:4a1d63239060793483bed9",
+        "android_client_info": {
+          "package_name": "com.wallh_spreadmedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "573522922780-m04ara8lhgtqoq1k16p5gvl2jeb1r0r1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI9C2xx-lJU781vLXfXW28kQhurw5lExc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "573522922780-m04ara8lhgtqoq1k16p5gvl2jeb1r0r1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
