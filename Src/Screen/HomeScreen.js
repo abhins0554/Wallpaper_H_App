@@ -11,7 +11,7 @@ function HomeScreen({ navigation }) {
 
     const [list, setlist] = useState([]);
     const [cateories, setcateories] = useState("All");
-    const [cateorieList, getcateorieList] = useState([]);
+    const [cateorieList, setcateorieList] = useState([]);
     const [imageLoading, setimageLoading] = useState(false);
 
     const get_data = async () => {
@@ -19,7 +19,7 @@ function HomeScreen({ navigation }) {
             .collection('Wallpaper')
             .where("Categories", "==", cateories)
             .get();
-        setlist(response._docs);
+            setlist(response._docs);
     }
 
     React.useEffect(() => {
@@ -27,10 +27,11 @@ function HomeScreen({ navigation }) {
     }, [cateories]);
 
     const get_categories_list = async () => {
+        setcateorieList([]);
         let response = await firestore()
             .collection("Categories")
             .get();
-        getcateorieList(response._docs);
+        setcateorieList(response._docs);
     }
 
     React.useEffect(() => {
